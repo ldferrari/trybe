@@ -1,4 +1,4 @@
 #!/bin/bash
-# Vou ter muito sucesso na programação!
+  # Eu sou trayber e vou me destacar no mercado de trabalho!
 echo "Shell Script é demais!"
 
