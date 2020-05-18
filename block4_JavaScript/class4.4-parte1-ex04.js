@@ -1,3 +1,5 @@
+// Faça um novo for/in, mas agora mostre todos os valores das chaves do objeto.
+
 let info = {
     personagem: "Margarida",
     origem: "Pato Donald",
@@ -6,4 +8,6 @@ let info = {
 
   info.recorrente= 'Sim'
 
-  console.log(info);
+  for (i in info){
+    console.log(info[i]);
+  }
