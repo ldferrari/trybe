@@ -11,5 +11,4 @@ let palindromo = "arara"
             return(false);
         }
     }
-
     console.log(testePalindromo(palindromo));
