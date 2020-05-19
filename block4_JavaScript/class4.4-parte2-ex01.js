@@ -4,9 +4,7 @@ let palindromo = "arara"
 
     function testePalindromo (palindromo){
     let inversor = palindromo.split('').reverse().join('');
-        if(palindromo == inversor){
-            return (true);
-        }
+        
         else{
             return(false);
         }
