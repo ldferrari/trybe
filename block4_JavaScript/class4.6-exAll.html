@@ -69,24 +69,18 @@
 
         // 2 - Adicione a tag div com a classe main-content como filho da tag body;
 
-        function addDivEndClass(div1 , class1){
-            div1 = document.createElement("div");
-            div1.className = class1;
+            let div1 = document.createElement("div");
+            div1.className = "main-content";
 
             document.getElementsByTagName("body")[0].appendChild(div1);
-        }
-        addDivEndClass("div1", "main-content");
 
         // 3 - Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
 
-        function addNewDivEndClass(div2 , class2){
-            div2 = document.createElement("div");
-            div2.className = class2;
+
+            let div2 = document.createElement("div");
+            div2.className = "center-content";
 
             document.querySelector(".main-content").appendChild(div2);
-        }
-        addNewDivEndClass("div2", "center-content");
-
 
         // 4 - Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
 
@@ -101,13 +95,10 @@
 
         // 5 - Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
 
-        function addNewDiv3EndClass(div3 , class3){
-            div3 = document.createElement("div");
-            div3.className = class3;
+            let div3 = document.createElement("div");
+            div3.className = "left-content";
 
             document.querySelector(".main-content").appendChild(div3);
-        }
-        addNewDiv3EndClass("div3", "left-content");
 
         // 6 - Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
         
@@ -170,12 +161,17 @@
 
         // 5 - Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
         
-        
+        div1.style.backgroundColor = "green"; 
         
         // 6 - Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
     
-    
-    
+        document.querySelector(".right-content").removeChild(naoOrdinaria);
+        document.querySelector(".main-content").removeChild(add1h3);
+        document.querySelector(".main-content").removeChild(add2h3);
+        document.querySelector(".main-content").removeChild(add3h3);
+
+
+
     </script>
   </body>
 </html>
