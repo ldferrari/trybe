@@ -38,7 +38,24 @@
             <option >Select</option>
         </select>
     </fieldset>
-    
+    <fieldset>
+        <legend>Último Emprego</legend>
+        <label for="resumo">Resumo do Currículo:</label>
+        <textarea id="resumo" name="resumo" maxlength="1000" required></textarea>
+        <br><br>
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" maxlength="40" size="42" required>
+        <br><br>
+        <label for="descrição">Descrição do Cargo:</label>
+        <input type="text" id="descrição" name="descrição" maxlength="500" size="100" required>
+        <br><br>
+        <label for="dataInicio">Data Inicial:</label>
+        <input type="date" id="dataInicial" name="dataInicial" required>
+        <br><br>
+        <label for="dataFinal">Data Final:</label>
+        <input type="date" id="dataFinal" name="dataFinal" required>
+        <br><br>
+    </fieldset>
     </form>
 
     <script src="script.js"></script>
