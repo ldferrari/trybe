@@ -7,9 +7,9 @@ body{
 #title{
     text-align: center;
 }
-fieldset{
-    border: 2px gray solid;
-    width: 80%;
-    border-radius: 10px;
-    margin: 20px auto 0 auto;
+form{
+    margin: 0 15% 0 15%;
+}
+.formulario{
+    margin-top: 60px;
 }

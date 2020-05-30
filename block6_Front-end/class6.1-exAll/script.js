@@ -28,11 +28,14 @@ let stateList = [
     ['Tocantins', 'TO']
   ];
 
-       
+      let select = document.querySelector('select');
+
     for (let i = 0; i < stateList.length; i++){
-      let select = document.querySelector('select')
       let option = document.createElement('option');
       option.value = stateList[i][1];
       option.innerHTML = stateList[i][0];
       select.appendChild(option);
     }
+
+    // documento.getElementById('dataInicial').DatePickerX.init();
+    // documento.getElementById('dataFinal').DatePickerX.init( );
