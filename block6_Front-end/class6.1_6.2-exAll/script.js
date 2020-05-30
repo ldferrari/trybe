@@ -36,6 +36,5 @@ let stateList = [
       option.innerHTML = stateList[i][0];
       select.appendChild(option);
     }
-
     // documento.getElementById('dataInicial').DatePickerX.init();
     // documento.getElementById('dataFinal').DatePickerX.init( );
