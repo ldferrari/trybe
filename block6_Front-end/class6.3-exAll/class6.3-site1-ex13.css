@@ -1,0 +1,6 @@
+#pond {
+    exibição: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row-reverse;
+  }
