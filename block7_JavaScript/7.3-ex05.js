@@ -1,16 +1,20 @@
 const assert = require('assert');
 
-function myFizzBuzz(num) {
-  if (typeof num !== 'number') return false;
-  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
-  if (num % 3 === 0) return 'fizz';
-  if (num % 5 === 0) return 'buzz';
-  return num;
+function myRemoveWithoutCopy(arr, item) {
+  for (let i = 0, len = arr.length; i < len; i += 1) {
+    if (arr[i] === item) {
+      arr.splice(i, 1);
+      i -= 1;
+      len -= 1;
+    }
+  }
+
+  return arr;
 }
 
 // implemente seus testes aqui
-assert.strictEqual(myFizzBuzz(15), 'fizzbuzz', 'Erro');
-assert.strictEqual(myFizzBuzz(9), 'fizz', 'Erro');
-assert.strictEqual(myFizzBuzz(10), 'buzz', 'Erro');
-assert.strictEqual(myFizzBuzz(4), 4, 'Erro');
-assert.strictEqual(myFizzBuzz('string'), false, 'Erro'); 
+assert.deepEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3),[1, 2, 4], false);
+assert.notDeepEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4], false);
+let arr = [1, 2, 3, 4]
+assert.notDeepEqual(myRemoveWithoutCopy((arr, 3), arr, false));
+assert.deepEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5),[1, 2, 3, 4], false);
