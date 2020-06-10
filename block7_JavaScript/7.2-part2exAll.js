@@ -40,8 +40,8 @@ ValueLession(lesson3);
 
 console.log('ex05 ---------------//-----------------'); 
 
-let all = {lesson1, lesson2, lesson3};
-let allLessons = Object.assign({}, all);
+let allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
 console.log(allLessons);
+
 
 
