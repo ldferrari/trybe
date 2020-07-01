@@ -1,9 +1,0 @@
-{
-  "scripts": {
-    "test": "jest --watch",
-    "testCoverge": "jest --coverge"
-  },
-  "devDependencies": {
-    "jest": "^26.1.0"
-  }
-}
