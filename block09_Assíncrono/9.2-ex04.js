@@ -25,8 +25,8 @@ const sendMarsTemperature = (callback) => {
     callback(temperatura);
   }, messageDelay());
 };
-// sendMarsTemperature();
 
+// sendMarsTemperature();
 
 // 1 - Agora que você fez a função que envia a temperatura de Marte, suponha que você
 // consiga enviar para o robô Curiosity o que você deseja fazer, uma vez obtida com
