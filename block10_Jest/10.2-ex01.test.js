@@ -1,5 +1,5 @@
 function rand() {
-    Math.round(nMath.random() * 101)
+    Math.round(Math.random() * 101)
 }
 
 test('testndo a função com jest.fn', () => {
