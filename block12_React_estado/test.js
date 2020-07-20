@@ -1,3 +1,20 @@
+import React from 'react';
+import './App.css';
+import Formulario from './Formulario';
+
+function App() {
+  return (
+    <div className="App App-header">
+      <Formulario />
+    </div>
+  );
+}
+
+export default App;
+
+
+// Formilario
+
 import React from "react";
 
 const states = [
@@ -55,11 +72,6 @@ class Formulario extends React.Component {
           [name]: value,
         }))
     }
-
-    /* validateEmail(string) {
-        const isValid = string.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2})$/i);
-        return isValid ? this.setState({ email: string }) : null;
-        }  */
 
     renderInfo = () => {
         if (this.state.ativo) {
@@ -136,3 +148,44 @@ class Formulario extends React.Component {
 }
 
 export default Formulario
+
+//App.css
+
+.App-header {
+    background-color: #b1c6db;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(1.5vmin);
+    color: rgb(19, 17, 145);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    line-height: 1px;
+  }
+  
+  .text-input {
+    width: 700px
+  }
+  
+  .resumo {
+    height: 100px;
+    width: 700px;
+  }
+  
+  .button {
+    color: white;
+    background-color: #0c5303;;
+    font-size: 17px;
+    margin: 10px;
+    height: 40px;
+    width: 80px;
+  }
+  
+  
