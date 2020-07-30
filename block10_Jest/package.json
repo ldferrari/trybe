@@ -4,9 +4,10 @@
         "testCoverge": "jest --coverge"
     },
     "dependencies": {
-    	"node-fetch": "².6.0"
+        "express": "^4.17.1",
+        "node-fetch": "².6.0"
     },
     "devDependencies": {
-    	"jest": "26.1.0"
+        "jest": "26.1.0"
     }
-  }
+}
