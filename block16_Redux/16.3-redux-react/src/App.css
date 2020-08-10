@@ -1,0 +1,36 @@
+.App-header {
+  background-color: #b1c6db;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(1.5vmin);
+  color: rgb(19, 17, 145);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  line-height: 1px;
+}
+
+.text-input {
+  width: 700px
+}
+
+.resumo {
+  height: 100px;
+  width: 700px;
+}
+
+.button {
+  color: white;
+  background-color: #0c5303;;
+  font-size: 17px;
+  margin: 10px;
+  height: 40px;
+  width: 80px;
+}
