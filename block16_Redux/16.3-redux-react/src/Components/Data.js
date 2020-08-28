@@ -1,34 +1,36 @@
 import React from 'react';
 import { connect } from 'react-redux';
-//import NenhumCliente from './Nenhum_cliente';
+import NenhumCliente from './Nenhum_cliente';
 
-  const NewDate = (usuarios) => {
-    //const { usuarios } = this.props;
+  const NewDate = ({usuarios}) => {
     console.log(usuarios)
-    /* const usuarioS = usuarios.usuarios.usuarios;
-    console.log({...usuarioS})
-    for (let i = 0; i < {...usuarioS}; i++){
-    console.log(i);
-    }; */
+    if (!usuarios[0]) return <NenhumCliente />;
     return (
-      <div className="stateSave">
-        Nome: {usuarios.usuarios.usuarios.name},
-        Email: {usuarios.email},
-        CPF: {usuarios.cpf},
-        Endereço: {usuarios.endereço},
-        Cidade: {usuarios.cidade},
-        Estado: {usuarios.estado},
-        Tipo: {usuarios.tipo},
-        Senha: {usuarios.tipo},
-        Resumo: {usuarios.resumo},
-        Cargo: {usuarios.cargo},
-        Descrição: {usuarios.descrição},
+      <div>
+        {usuarios.map(usuario => {
+          const { name, email, cpf, endereço, cidade, estado, tipo, password, resumo, cargo, descrição } = usuario;
+          return(
+            <div className="stateSave">
+              Nome: {name},
+              Email: {email},
+              CPF: {cpf},
+              Endereço: {endereço},
+              Cidade: {cidade},
+              Estado: {estado},
+              Tipo: {tipo},
+              Senha: {password},
+              Resumo: {resumo},
+              Cargo: {cargo},
+              Descrição: {descrição},
+            </div>
+          )
+        })}
       </div>
     )
   }
 
 const mapStateToProps = (state) => ({
-  usuarios: state,
+  usuarios: state.usuarios,
 });
 
 /* const mapDispatchToProps = (dispatch) => ({

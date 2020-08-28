@@ -46,10 +46,10 @@ class Formulario extends React.Component {
       cidade:'',
       estado:'',
       tipo:'',
+      password:'',
       resumo:'',
       cargo:'',
       descrição:'',
-      ativo: true,
     }
   }
 
@@ -107,8 +107,7 @@ class Formulario extends React.Component {
                   <textarea className="text-input" type="text" name="descrição" value={this.state.descrição}
                   onChange={this.trocarInput} maxLength="500" required/>
               </div>
-              <button className="button" onClick={() => this.props.addToCurriculo(this.state)}>Salvar</button>
-              <Link to="/clientes">Próxima</Link>
+              <Link to="/clientes"><button className="button" onClick={() => this.props.addToCurriculo(this.state)}>Salvar</button></Link>
           </div>  
         );
     }
