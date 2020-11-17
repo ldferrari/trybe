@@ -7,8 +7,6 @@ const express = require('express');
 const post = require('./post');
 const app = express();
 
-app.use(express.json());
-
 app.get('/posts', function(req, res, next) {
   res.status(200).json(post);
   next();
