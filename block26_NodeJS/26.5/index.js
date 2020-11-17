@@ -21,7 +21,7 @@ app.get('/posts/:id', function(req,res, next) {
   const qualquer = post.find(e => e.id === Number(id));
   res.status(200).json(qualquer);
   } else {
-  res.status(500).send(`id not found..`);
+  res.status(404).send(`id not found..`);
   }
 });
 
