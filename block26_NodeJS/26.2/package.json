@@ -1,0 +1,19 @@
+{
+  "name": "26.2",
+  "version": "1.0.0",
+  "description": "meu primeiro script NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "teste": "node ./26.2-teste.js",
+    "ex01": "node ./26.2-ex01.js",
+    "ex02": "node ./26.2-ex02.js",
+    "26.3-ex01": "node ./26.3-ex01.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ferrari <luisdiasferrari@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
